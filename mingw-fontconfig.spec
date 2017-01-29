@@ -2,7 +2,7 @@
 
 Name:           mingw-fontconfig
 Version:        2.12.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        MinGW Windows Fontconfig library
 
 License:        MIT
@@ -26,7 +26,6 @@ BuildRequires:  mingw64-freetype
 BuildRequires:  mingw64-win-iconv
 
 BuildRequires:  pkgconfig
-BuildRequires:  python3
 
 # Needed for the patch
 BuildRequires:  autoconf automake libtool
@@ -150,6 +149,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw64_datadir}/doc
 
 
 %changelog
+* Sun Jan 29 2017 Jajauma's Packages <jajauma@yandex.ru> - 2.12.1-2
+- Don't require python3 for building
+
 * Mon Sep 05 2016 Kalev Lember <klember@redhat.com> - 2.12.1-1
 - Update to 2.12.1
 - Don't set group tags
