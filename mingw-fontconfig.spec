@@ -2,7 +2,7 @@
 
 Name:           mingw-fontconfig
 Version:        2.12.1
-Release:        2%{?dist}
+Release:        3%{?dist}
 Summary:        MinGW Windows Fontconfig library
 
 License:        MIT
@@ -149,6 +149,9 @@ rm -rf $RPM_BUILD_ROOT%{mingw64_datadir}/doc
 
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 2.12.1-3
+- Rebuild with GCC 5.4.0
+
 * Sun Jan 29 2017 Jajauma's Packages <jajauma@yandex.ru> - 2.12.1-2
 - Don't require python3 for building
 
